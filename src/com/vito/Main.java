@@ -17,11 +17,7 @@ public class Main {
         System.out.println("Input addresses now with spaces between: ");
         Scanner scanner = new Scanner(System.in);
         String addresses = scanner.nextLine();
-        System.out.println(addresses);
         List<Integer> addr = parseAddresses(addresses);
-        //for(int i : addr){
-        //    System.out.print(i + ",");
-        //}
         CacheSimulator sim = new CacheSimulator(addr);
         sim.simulate();
     }
